@@ -1,9 +1,8 @@
-// src/components/Sidebar.js
 import React from 'react';
 
 function Sidebar({ onSelectOption }) {
   return (
-    <aside className="w-64 bg-gray-200 text-black min-h-screen p-4 flex-none">
+    <aside className="w-16 md:w-64 transition-all duration-300 ease-in-out flex-none bg-gray-200 text-black p-2 flex-none flex flex-col justify-between ">
       <nav>
         <ul className="space-y-2">
           <li>
@@ -26,6 +25,12 @@ function Sidebar({ onSelectOption }) {
           </li>
         </ul>
       </nav>
+
+      <div className='flex'>
+        <span className="material-symbols-outlined ml-auto p-2 rounded transition duration-200 hover:bg-gray-300">
+          arrow_back_ios
+        </span>
+    </div>
     </aside>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ProductList from './components/productList'
-import Sidebar from './components/sidebar'
+import ProductList from './components/ProductList'
+import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import  AddProductForm from './components/AddProductForm'
 
@@ -23,12 +23,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 font-satoshi">
+    <div className="h-screen flex flex-col bg-gray-100 font-satoshi">
     <Header title="Tienda de Productos" />
     
-    <div className='flex'>
+    <div className='flex flex-1 min-h-0'>
       <Sidebar onSelectOption={handleSelectOption} />
-      <main>
+      <main className="flex-1 overflow-y-auto">
         {renderContent()}
       </main>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function AddProductForm() {
   return (
-    <div className="max-w-xl mx-auto p-8 bg-white rounded-lg shadow-md">
+    <div className="max-w-xl mx-auto mt-8 p-8 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Añadir Nuevo Producto</h2>
       
       <form className="space-y-6">
